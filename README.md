@@ -76,7 +76,8 @@
     }
 }
 ```
-   (*if you are using Linux mysql is preffered or else errors will occur related to timezone and if still you want use sqlite in Linux change USE_TZ = True in src/user_project/settings.py but it will give appropriate timezone data*)
+   
+  *Note: if you are using Linux mysql is preffered or else errors will occur related to timezone and if still you want use sqlite in Linux change USE_TZ = True in src/user_project/settings.py but it will give appropriate timezone data*
 ------
 
 6. Make migrations to the database.
@@ -129,7 +130,7 @@
 
     `$ curl --location --request GET 'http://127.0.0.1:8000/api/accounts/activity-period'|json_reformat`
 
-   If logging is needed use
+    If logging is needed use
 
-   `$ curl --location --request GET 'http://127.0.0.1:8000/api/accounts/activity-period'|json_reformat >> api_log.json`
+    `$ curl --location --request GET 'http://127.0.0.1:8000/api/accounts/activity-period'|json_reformat >> api_log.json`
 

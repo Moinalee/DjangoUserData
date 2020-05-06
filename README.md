@@ -12,8 +12,8 @@
 
    ` $ git clone URL_TO_REPO FOLDER_NAME`
 
- For instance
-  ` $ git clone https://github.com/Moinalee/FullThrottleAssignment root`
+   For instance
+   ` $ git clone https://github.com/Moinalee/FullThrottleAssignment root`
 
 ------
 
@@ -25,7 +25,7 @@
 
    
 
-(if you do not have *virtualenv* installed, do   `$ pip install virtualenv`)
+   (if you do not have *virtualenv* installed, do   `$ pip install virtualenv`)
 
 ------
 
@@ -37,7 +37,7 @@
 
    `$ .\Scripts\activate`
 
-if you do a   `$ pip freeze`   now, you will see that you have no packages installed.
+   if you do a   `$ pip freeze`   now, you will see that you have no packages installed.
 
 ------
 
@@ -45,7 +45,7 @@ if you do a   `$ pip freeze`   now, you will see that you have no packages insta
 
    `$ pip install -r requirements.txt`
 
-Proceed when all the packages are successfully installed.
+   Proceed when all the packages are successfully installed.
 
 ------
 
@@ -95,7 +95,7 @@ Proceed when all the packages are successfully installed.
 
    `$ python3 manage.py createsuperuser`
 
-Use the credentials for logging into Django admin interface after next step.
+   Use the credentials for logging into Django admin interface after next step.
 
 ------
 
@@ -103,32 +103,32 @@ Use the credentials for logging into Django admin interface after next step.
 
    `$ python3 manage.py runserver`
 
-The local server should be up and running. Happy developing.
+   The local server should be up and running. Happy developing.
 
 
 ------
 
 9. Request URL
    
-    `http://localhost:8000`
+   `http://localhost:8000`
 
-Home page is opened,click on hyper link to see admin page use the credentials for logging in and now we can see the user and Activityperiod models populated with dummy data.
+   Home page is opened,click on hyper link to see admin page use the credentials for logging in and now we can see the user and Activityperiod models populated with dummy data.
 
 ------
 
 10. API to serve data
 
-Create the user profile and enter the Activityperiod data.
+   Create the user profile and enter the Activityperiod data.
 
-To check API servinig data in json call the API.It can be done easily by using curl in terminal.
+   To check API servinig data in json call the API.It can be done easily by using curl in terminal.
 
-    `$ curl --location --request GET 'http://127.0.0.1:8000/api/accounts/activity-period'`
+   `$ curl --location --request GET 'http://127.0.0.1:8000/api/accounts/activity-period'`
 
-For proper json format
+   For proper json format
 
-    `$ curl --location --request GET 'http://127.0.0.1:8000/api/accounts/activity-period'|json_reformat`
+   `$ curl --location --request GET 'http://127.0.0.1:8000/api/accounts/activity-period'|json_reformat`
 
-If logging is needed use
+   If logging is needed use
 
-    `$ curl --location --request GET 'http://127.0.0.1:8000/api/accounts/activity-period'|json_reformat >> api_log.json`
+   `$ curl --location --request GET 'http://127.0.0.1:8000/api/accounts/activity-period'|json_reformat >> api_log.json`
 

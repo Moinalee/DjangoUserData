@@ -76,6 +76,7 @@
     }
 }
 ```
+   (*if you are using Linux mysql is preffered or else errors will occur related to timezone and if still you want use sqlite in Linux change USE_TZ = True in src/user_project/settings.py but it will give appropriate timezone data*)
 ------
 
 6. Make migrations to the database.
@@ -118,15 +119,15 @@
 
 10. API to serve data
 
-   Create the user profile and enter the Activityperiod data.
+    Create the user profile and enter the Activityperiod data.
 
-   To check API servinig data in json call the API.It can be done easily by using curl in terminal.
+    To check API servinig data in json call the API.It can be done easily by using curl in terminal.
 
-   `$ curl --location --request GET 'http://127.0.0.1:8000/api/accounts/activity-period'`
+    `$ curl --location --request GET 'http://127.0.0.1:8000/api/accounts/activity-period'`
 
-   For proper json format
+    For proper json format
 
-   `$ curl --location --request GET 'http://127.0.0.1:8000/api/accounts/activity-period'|json_reformat`
+    `$ curl --location --request GET 'http://127.0.0.1:8000/api/accounts/activity-period'|json_reformat`
 
    If logging is needed use
 

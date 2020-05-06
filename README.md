@@ -77,7 +77,7 @@
 }
 ```
    
-  *Note: if you are using Linux mysql is preffered or else errors will occur related to timezone and if still you want use sqlite in Linux change USE_TZ = True in src/user_project/settings.py but it will give appropriate timezone data*
+  *Note: if you are using Linux mysql is preffered or else errors will occur related to timezone and if still you want use sqlite in Linux change USE_TZ = True in src/user_project/settings.py but it will not give appropriate timezone data*
 ------
 
 6. Make migrations to the database.
